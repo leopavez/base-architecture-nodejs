@@ -1,0 +1,9 @@
+#MAC Files
+.DS_Store
+.DS_Stores
+
+# Dependences directory
+/node_modules
+
+# dotenv environment
+.env
