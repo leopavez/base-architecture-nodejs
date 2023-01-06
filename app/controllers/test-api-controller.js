@@ -1,7 +1,8 @@
-const testApiController = (req, res) => {
-    console.log(`testApiController: ${req.method} ${req.originalUrl}`);
+/* eslint-disable no-console */
+const testApiController = (req) => {
+  console.log(`testApiController: ${req.method} ${req.originalUrl}`);
 
-    return { message: 'testApiController successfull'}
+  return { message: 'testApiController successfull' };
 };
 
 module.exports = { testApiController };
