@@ -66,7 +66,8 @@ server.listen(port, host, () => {
   displayRoutes(app);
 });
 
-app.use((err, req, res) => {
+// eslint-disable-next-line no-unused-vars
+app.use((err, req, res, next) => {
   res.status(500).send({ code: 'Error', message: err.message });
 });
 

@@ -8,7 +8,7 @@ const testApiMiddleware = async (req, res, next) => {
     req.test = await controller.testApiController(req);
     return next();
   } catch (error) {
-    console.log(`Error in testApiMiddleware: ${error.message}`);
+    console.error(`Error in testApiMiddleware: ${error.message}`);
     return setResponseWithError(res, 400, `Error in testApiMiddleware: ${error.message}`);
   }
 };
